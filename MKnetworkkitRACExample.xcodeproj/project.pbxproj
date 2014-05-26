@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046A3765DC6941DC92C6F4B9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 250F6372DDCF45AB9F641AEE /* libPods.a */; };
+		17340EF119331AFD00C0F10C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17340EF019331AFD00C0F10C /* Foundation.framework */; };
+		17340EF319331AFD00C0F10C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17340EF219331AFD00C0F10C /* CoreGraphics.framework */; };
+		17340EF519331AFD00C0F10C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17340EF419331AFD00C0F10C /* UIKit.framework */; };
+		17340EFB19331AFD00C0F10C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17340EF919331AFD00C0F10C /* InfoPlist.strings */; };
+		17340EFD19331AFD00C0F10C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17340EFC19331AFD00C0F10C /* main.m */; };
+		17340F0119331AFD00C0F10C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17340F0019331AFD00C0F10C /* AppDelegate.m */; };
+		17340F0419331AFD00C0F10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17340F0219331AFD00C0F10C /* Main.storyboard */; };
+		17340F0719331AFD00C0F10C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17340F0619331AFD00C0F10C /* ViewController.m */; };
+		17340F0919331AFE00C0F10C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17340F0819331AFD00C0F10C /* Images.xcassets */; };
+		17340F1019331AFE00C0F10C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17340F0F19331AFE00C0F10C /* XCTest.framework */; };
+		17340F1119331AFE00C0F10C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17340EF019331AFD00C0F10C /* Foundation.framework */; };
+		17340F1219331AFE00C0F10C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17340EF419331AFD00C0F10C /* UIKit.framework */; };
+		17340F1A19331AFE00C0F10C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17340F1819331AFE00C0F10C /* InfoPlist.strings */; };
+		17340F1C19331AFE00C0F10C /* MKnetworkkitRACExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17340F1B19331AFE00C0F10C /* MKnetworkkitRACExampleTests.m */; };
+		17340F31193333C600C0F10C /* MKNetworkEngine+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 17340F2E193333C600C0F10C /* MKNetworkEngine+RACSupport.m */; };
+		17340F32193333C600C0F10C /* MKNetworkOperation+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 17340F30193333C600C0F10C /* MKNetworkOperation+RACSupport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17340F1319331AFE00C0F10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17340EE519331AFD00C0F10C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17340EEC19331AFD00C0F10C;
+			remoteInfo = MKnetworkkitRACExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17340EED19331AFD00C0F10C /* MKnetworkkitRACExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKnetworkkitRACExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17340EF019331AFD00C0F10C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17340EF219331AFD00C0F10C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17340EF419331AFD00C0F10C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17340EF819331AFD00C0F10C /* MKnetworkkitRACExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKnetworkkitRACExample-Info.plist"; sourceTree = "<group>"; };
+		17340EFA19331AFD00C0F10C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17340EFC19331AFD00C0F10C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17340EFE19331AFD00C0F10C /* MKnetworkkitRACExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKnetworkkitRACExample-Prefix.pch"; sourceTree = "<group>"; };
+		17340EFF19331AFD00C0F10C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17340F0019331AFD00C0F10C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17340F0319331AFD00C0F10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17340F0519331AFD00C0F10C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17340F0619331AFD00C0F10C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17340F0819331AFD00C0F10C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17340F0E19331AFE00C0F10C /* MKnetworkkitRACExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKnetworkkitRACExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17340F0F19331AFE00C0F10C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		17340F1719331AFE00C0F10C /* MKnetworkkitRACExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKnetworkkitRACExampleTests-Info.plist"; sourceTree = "<group>"; };
+		17340F1919331AFE00C0F10C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17340F1B19331AFE00C0F10C /* MKnetworkkitRACExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKnetworkkitRACExampleTests.m; sourceTree = "<group>"; };
+		17340F2D193333C600C0F10C /* MKNetworkEngine+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKNetworkEngine+RACSupport.h"; sourceTree = "<group>"; };
+		17340F2E193333C600C0F10C /* MKNetworkEngine+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKNetworkEngine+RACSupport.m"; sourceTree = "<group>"; };
+		17340F2F193333C600C0F10C /* MKNetworkOperation+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKNetworkOperation+RACSupport.h"; sourceTree = "<group>"; };
+		17340F30193333C600C0F10C /* MKNetworkOperation+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKNetworkOperation+RACSupport.m"; sourceTree = "<group>"; };
+		250F6372DDCF45AB9F641AEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FA432D366947388B7CF4DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17340EEA19331AFD00C0F10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17340EF319331AFD00C0F10C /* CoreGraphics.framework in Frameworks */,
+				17340EF519331AFD00C0F10C /* UIKit.framework in Frameworks */,
+				17340EF119331AFD00C0F10C /* Foundation.framework in Frameworks */,
+				046A3765DC6941DC92C6F4B9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17340F0B19331AFE00C0F10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17340F1019331AFE00C0F10C /* XCTest.framework in Frameworks */,
+				17340F1219331AFE00C0F10C /* UIKit.framework in Frameworks */,
+				17340F1119331AFE00C0F10C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17340EE419331AFD00C0F10C = {
+			isa = PBXGroup;
+			children = (
+				17340F2C193333C600C0F10C /* MKnetworkkit-RACExtensions */,
+				17340EF619331AFD00C0F10C /* MKnetworkkitRACExample */,
+				17340F1519331AFE00C0F10C /* MKnetworkkitRACExampleTests */,
+				17340EEF19331AFD00C0F10C /* Frameworks */,
+				17340EEE19331AFD00C0F10C /* Products */,
+				F2FA432D366947388B7CF4DC /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		17340EEE19331AFD00C0F10C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17340EED19331AFD00C0F10C /* MKnetworkkitRACExample.app */,
+				17340F0E19331AFE00C0F10C /* MKnetworkkitRACExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17340EEF19331AFD00C0F10C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17340EF019331AFD00C0F10C /* Foundation.framework */,
+				17340EF219331AFD00C0F10C /* CoreGraphics.framework */,
+				17340EF419331AFD00C0F10C /* UIKit.framework */,
+				17340F0F19331AFE00C0F10C /* XCTest.framework */,
+				250F6372DDCF45AB9F641AEE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17340EF619331AFD00C0F10C /* MKnetworkkitRACExample */ = {
+			isa = PBXGroup;
+			children = (
+				17340EFF19331AFD00C0F10C /* AppDelegate.h */,
+				17340F0019331AFD00C0F10C /* AppDelegate.m */,
+				17340F0219331AFD00C0F10C /* Main.storyboard */,
+				17340F0519331AFD00C0F10C /* ViewController.h */,
+				17340F0619331AFD00C0F10C /* ViewController.m */,
+				17340F0819331AFD00C0F10C /* Images.xcassets */,
+				17340EF719331AFD00C0F10C /* Supporting Files */,
+			);
+			path = MKnetworkkitRACExample;
+			sourceTree = "<group>";
+		};
+		17340EF719331AFD00C0F10C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17340EF819331AFD00C0F10C /* MKnetworkkitRACExample-Info.plist */,
+				17340EF919331AFD00C0F10C /* InfoPlist.strings */,
+				17340EFC19331AFD00C0F10C /* main.m */,
+				17340EFE19331AFD00C0F10C /* MKnetworkkitRACExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17340F1519331AFE00C0F10C /* MKnetworkkitRACExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				17340F1B19331AFE00C0F10C /* MKnetworkkitRACExampleTests.m */,
+				17340F1619331AFE00C0F10C /* Supporting Files */,
+			);
+			path = MKnetworkkitRACExampleTests;
+			sourceTree = "<group>";
+		};
+		17340F1619331AFE00C0F10C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17340F1719331AFE00C0F10C /* MKnetworkkitRACExampleTests-Info.plist */,
+				17340F1819331AFE00C0F10C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17340F2C193333C600C0F10C /* MKnetworkkit-RACExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				17340F2D193333C600C0F10C /* MKNetworkEngine+RACSupport.h */,
+				17340F2E193333C600C0F10C /* MKNetworkEngine+RACSupport.m */,
+				17340F2F193333C600C0F10C /* MKNetworkOperation+RACSupport.h */,
+				17340F30193333C600C0F10C /* MKNetworkOperation+RACSupport.m */,
+			);
+			path = "MKnetworkkit-RACExtensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17340EEC19331AFD00C0F10C /* MKnetworkkitRACExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17340F1F19331AFE00C0F10C /* Build configuration list for PBXNativeTarget "MKnetworkkitRACExample" */;
+			buildPhases = (
+				C59F4FBC6C2F497FA3543908 /* Check Pods Manifest.lock */,
+				17340EE919331AFD00C0F10C /* Sources */,
+				17340EEA19331AFD00C0F10C /* Frameworks */,
+				17340EEB19331AFD00C0F10C /* Resources */,
+				3326629439584C669802C4BD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKnetworkkitRACExample;
+			productName = MKnetworkkitRACExample;
+			productReference = 17340EED19331AFD00C0F10C /* MKnetworkkitRACExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17340F0D19331AFE00C0F10C /* MKnetworkkitRACExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17340F2219331AFE00C0F10C /* Build configuration list for PBXNativeTarget "MKnetworkkitRACExampleTests" */;
+			buildPhases = (
+				17340F0A19331AFE00C0F10C /* Sources */,
+				17340F0B19331AFE00C0F10C /* Frameworks */,
+				17340F0C19331AFE00C0F10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17340F1419331AFE00C0F10C /* PBXTargetDependency */,
+			);
+			name = MKnetworkkitRACExampleTests;
+			productName = MKnetworkkitRACExampleTests;
+			productReference = 17340F0E19331AFE00C0F10C /* MKnetworkkitRACExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17340EE519331AFD00C0F10C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = x;
+				TargetAttributes = {
+					17340F0D19331AFE00C0F10C = {
+						TestTargetID = 17340EEC19331AFD00C0F10C;
+					};
+				};
+			};
+			buildConfigurationList = 17340EE819331AFD00C0F10C /* Build configuration list for PBXProject "MKnetworkkitRACExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17340EE419331AFD00C0F10C;
+			productRefGroup = 17340EEE19331AFD00C0F10C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17340EEC19331AFD00C0F10C /* MKnetworkkitRACExample */,
+				17340F0D19331AFE00C0F10C /* MKnetworkkitRACExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17340EEB19331AFD00C0F10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17340F0919331AFE00C0F10C /* Images.xcassets in Resources */,
+				17340EFB19331AFD00C0F10C /* InfoPlist.strings in Resources */,
+				17340F0419331AFD00C0F10C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17340F0C19331AFE00C0F10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17340F1A19331AFE00C0F10C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3326629439584C669802C4BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59F4FBC6C2F497FA3543908 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17340EE919331AFD00C0F10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17340F0719331AFD00C0F10C /* ViewController.m in Sources */,
+				17340F31193333C600C0F10C /* MKNetworkEngine+RACSupport.m in Sources */,
+				17340F0119331AFD00C0F10C /* AppDelegate.m in Sources */,
+				17340EFD19331AFD00C0F10C /* main.m in Sources */,
+				17340F32193333C600C0F10C /* MKNetworkOperation+RACSupport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17340F0A19331AFE00C0F10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17340F1C19331AFE00C0F10C /* MKnetworkkitRACExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17340F1419331AFE00C0F10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17340EEC19331AFD00C0F10C /* MKnetworkkitRACExample */;
+			targetProxy = 17340F1319331AFE00C0F10C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17340EF919331AFD00C0F10C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17340EFA19331AFD00C0F10C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17340F0219331AFD00C0F10C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17340F0319331AFD00C0F10C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17340F1819331AFE00C0F10C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17340F1919331AFE00C0F10C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17340F1D19331AFE00C0F10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17340F1E19331AFE00C0F10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17340F2019331AFE00C0F10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FA432D366947388B7CF4DC /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKnetworkkitRACExample/MKnetworkkitRACExample-Prefix.pch";
+				INFOPLIST_FILE = "MKnetworkkitRACExample/MKnetworkkitRACExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17340F2119331AFE00C0F10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FA432D366947388B7CF4DC /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKnetworkkitRACExample/MKnetworkkitRACExample-Prefix.pch";
+				INFOPLIST_FILE = "MKnetworkkitRACExample/MKnetworkkitRACExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		17340F2319331AFE00C0F10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MKnetworkkitRACExample.app/MKnetworkkitRACExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKnetworkkitRACExample/MKnetworkkitRACExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MKnetworkkitRACExampleTests/MKnetworkkitRACExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		17340F2419331AFE00C0F10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MKnetworkkitRACExample.app/MKnetworkkitRACExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MKnetworkkitRACExample/MKnetworkkitRACExample-Prefix.pch";
+				INFOPLIST_FILE = "MKnetworkkitRACExampleTests/MKnetworkkitRACExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17340EE819331AFD00C0F10C /* Build configuration list for PBXProject "MKnetworkkitRACExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17340F1D19331AFE00C0F10C /* Debug */,
+				17340F1E19331AFE00C0F10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17340F1F19331AFE00C0F10C /* Build configuration list for PBXNativeTarget "MKnetworkkitRACExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17340F2019331AFE00C0F10C /* Debug */,
+				17340F2119331AFE00C0F10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17340F2219331AFE00C0F10C /* Build configuration list for PBXNativeTarget "MKnetworkkitRACExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17340F2319331AFE00C0F10C /* Debug */,
+				17340F2419331AFE00C0F10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17340EE519331AFD00C0F10C /* Project object */;
+}
