@@ -21,4 +21,4 @@ It builds on, ReactiveCocoa, above AFNetworking, is a more simple, abstract exte
     
 ###License
 
-MKnetworkkit-RACExtensions is available free of change under the Open Source license, along with the MIT license that AFNetworking uses. Use it at your own risk.
+MKnetworkkit-RACExtensions is available free of change under the Open Source license, along with the MIT license that MKnetworkkit uses. Use it at your own risk.
