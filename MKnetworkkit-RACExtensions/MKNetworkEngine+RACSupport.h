@@ -40,4 +40,7 @@
  */
 - (RACSignal *)rac_DELETE:(NSString *)path parameters:(NSDictionary *)parameters ssl:(BOOL)useSSL;
 
+- (RACSignal *)rac_download:(NSString *)url parameters:(NSDictionary *)parameters filePath:(NSString *)filePath;
+
+
 @end

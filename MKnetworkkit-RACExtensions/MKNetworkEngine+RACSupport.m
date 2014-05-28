@@ -46,6 +46,24 @@
 			setNameWithFormat:@"<%@: %p> -rac_deletePath: %@, parameters: %@", self.class, self, path, parameters];
 }
 
+
+- (RACSignal *)rac_download:(NSString *)url parameters:(NSDictionary *)parameters filePath:(NSString *)filePath{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        MKNetworkOperation *operation = [self operationWithURLString:url params:parameters];
+        RACSignal *signal = [operation rac_downloadProgress];
+        [operation addDownloadStream:[NSOutputStream outputStreamToFileAtPath:filePath append:NO]];
+        [self enqueueOperation:operation forceReload:YES];   //添加到队列
+		[signal subscribe:subscriber];
+        
+        return [RACDisposable disposableWithBlock:^{
+            [operation cancel];
+        }];
+    }];
+
+}
+
+
 - (RACSignal *)rac_requestPath:(NSString *)path parameters:(NSDictionary *)parameters method:(NSString *)method ssl:(BOOL)useSSL{
 	return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         

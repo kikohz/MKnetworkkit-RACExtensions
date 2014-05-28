@@ -7,6 +7,7 @@
 //
 
 #import "MKNetworkOperation+RACSupport.h"
+#import <objc/message.h>
 
 @implementation MKNetworkOperation (RACSupport)
 
@@ -23,9 +24,35 @@
             [subject sendCompleted];
         } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
             [subject sendError:error];
+            [subject sendCompleted];
         }];
     }
     return subject;
 }
+
+
+- (RACSignal *)rac_progressSignalWithSelector:(SEL)original
+{
+    RACReplaySubject *subject = [RACReplaySubject subject];
+    
+    void(^ProgressBlock)(double) = ^(double progress){
+        [subject sendNext:@(progress)];
+    };
+    
+    objc_msgSend(self, original, ProgressBlock);
+    
+    return [subject deliverOn:[RACScheduler scheduler]];
+}
+
+- (RACSignal *)rac_downloadProgress
+{
+    return [self rac_progressSignalWithSelector:@selector(onDownloadProgressChanged:)];
+}
+
+- (RACSignal *)rac_uploadProgress
+{
+    return [self rac_progressSignalWithSelector:@selector(onUploadProgressChanged:)];
+}
+
 
 @end

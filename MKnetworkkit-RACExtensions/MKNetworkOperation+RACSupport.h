@@ -11,4 +11,9 @@
 
 @interface MKNetworkOperation (RACSupport)
 -(RACSignal *)rac_overrideHTTPCompletionHandlerBlock;
+
+- (RACSignal *)rac_downloadProgress;
+
+- (RACSignal *)rac_uploadProgress;
+
 @end

@@ -26,15 +26,28 @@
     @weakify(self);
     self.getButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         
-        MKNetworkEngine *mkengine = [[MKNetworkEngine alloc] initWithHostName:@"i2.apiary.io"];
+        NSString *tempPath = NSTemporaryDirectory();
+        NSString *tempFilePath = [NSString stringWithFormat:@"%@1.temp",
+                                  tempPath];
         
-        [[mkengine rac_GET:@"notes" parameters:nil ssl:NO] subscribeNext:^(MKNetworkOperation *op) {
-            
-            self_weak_.responseText.text = [op responseString];
-            
-        } error:^(NSError *error) {
-            self_weak_.responseText.text = [NSString stringWithFormat:@"%@",error];
+        MKNetworkEngine *mkengine = [MKNetworkEngine new];
+        
+        [[mkengine rac_download:@"http://dldir1.qq.com/qqfile/QQforMac/QQ_V3.1.1.dmg" parameters:nil filePath:tempFilePath] subscribeNext:^(NSNumber *x) {
+    
+            NSString *temp =[NSString stringWithFormat:@"%f",[x doubleValue]*100];
+            NSLog(@"%@",temp);
         }];
+        
+        
+//        MKNetworkEngine *mkengine = [[MKNetworkEngine alloc] initWithHostName:@"i2.apiary.io"];
+//        
+//        [[mkengine rac_GET:@"notes" parameters:nil ssl:NO] subscribeNext:^(MKNetworkOperation *op) {
+//            
+//            self_weak_.responseText.text = [op responseString];
+//            
+//        } error:^(NSError *error) {
+//            self_weak_.responseText.text = [NSString stringWithFormat:@"%@",error];
+//        }];
         
         return [RACSignal empty];
     }];
